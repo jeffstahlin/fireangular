@@ -1,0 +1,9 @@
+{
+	"quiz":	[
+		{"name": "super_villains_1", "answer_1": "Green Goblin", "answer_2": "Dr. Doom", "answer_3": "Magneto", "quizimage": "images/super_villains.png"},
+		{"name": "super_villains_2", "answer_1": "Green Goblin", "answer_2": "Dr. Doom", "answer_3": "Magneto", "quizimage": "images/super_villains.png"},
+		{"name": "super_villains_3", "answer_1": "Green Goblin", "answer_2": "Dr. Doom", "answer_3": "Magneto", "quizimage": "images/super_villains.png"},
+		{"name": "super_villains_4", "answer_1": "Green Goblin", "answer_2": "Dr. Doom", "answer_3": "Magneto", "quizimage": "images/super_villains.png"},
+		{"name": "super_villains_5", "answer_1": "Green Goblin", "answer_2": "Dr. Doom", "answer_3": "Magneto", "quizimage": "images/super_villains.png"}
+	]
+}

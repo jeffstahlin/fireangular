@@ -1,0 +1,9 @@
+{
+	"quiz":	[
+		{"name": "cars_1", "answer_1": "Mercedez", "answer_2": "Ferrari", "answer_3": "Porsche", "quizimage": "images/cars.png"},
+		{"name": "cars_2", "answer_1": "Mercedez", "answer_2": "Ferrari", "answer_3": "Porsche", "quizimage": "images/cars.png"},
+		{"name": "cars_3", "answer_1": "Mercedez", "answer_2": "Ferrari", "answer_3": "Porsche", "quizimage": "images/cars.png"},
+		{"name": "cars_4", "answer_1": "Mercedez", "answer_2": "Ferrari", "answer_3": "Porsche", "quizimage": "images/cars.png"},
+		{"name": "cars_5", "answer_1": "Mercedez", "answer_2": "Ferrari", "answer_3": "Porsche", "quizimage": "images/cars.png"}
+	]
+}

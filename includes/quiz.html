@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>My Steroids App</title>
+
+  <link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.css" />
+  <link rel="stylesheet" href="stylesheets/application.css" />
+
+  <script src="javascripts/onerror.js"></script>
+  <script src="javascripts/console.log.js"></script>
+
+  <!-- cordova.js is served from localhost to ensure the correct version -->
+  <script src="http://localhost/appgyver/cordova.js"></script>
+  <script src="components/steroids-js/steroids.js"></script>
+
+  <script src="javascripts/application.js"></script>
+  <script src="javascripts/handlebars.js"></script>
+  <script src="javascripts/jquery.min.js"></script>
+</head>
+  <body>
+    <div class="content-padded">
+      <div id="quiz">
+
+      </div>
+    </div>
+  </body>
+
+ <script id="quiz-template" type="text/x-handlebars-template">
+      <div data-role="content">
+      {{#list questions}}
+          {{number}}
+          {{quizimage}}
+      {{/list}}
+      </div>
+  </script>
+  <script>
+    $.urlParam = function(name){
+      var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+      return results[1] || 0;
+    }
+    
+    $.getJSON('includes/quiz.json?quiz=' + decodeURIComponent($.urlParam('quiz')), function(json) {
+        var source   = $("#quiz-template").html();
+        template = Handlebars.compile(source);
+        data = template(json);
+        html = $("#quiz").hide().html(data).fadeIn(700);
+    });
+  </script>
+</html>

@@ -1,0 +1,10 @@
+{
+	"cars": [
+				{"question": 1, "quizimage": "images/cars.png"},
+				{"question": 2, "quizimage": "images/cars.png"}
+	],
+	"buildings": [
+				{"question": 1, "quizimage": "images/buildings.png"},
+				{"question": 2, "quizimage": "images/buildings.png"}
+	]
+}

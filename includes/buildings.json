@@ -1,0 +1,9 @@
+{
+	"quiz":	[
+		{"name": "buildings_1", "answer_1": "Big Ben", "answer_2": "Colosseum", "answer_3": "Eiffel Tower", "quizimage": "images/buildings.png"},
+		{"name": "buildings_2", "answer_1": "Big Ben", "answer_2": "Colosseum", "answer_3": "Eiffel Tower", "quizimage": "images/buildings.png"},
+		{"name": "buildings_3", "answer_1": "Big Ben", "answer_2": "Colosseum", "answer_3": "Eiffel Tower", "quizimage": "images/buildings.png"},
+		{"name": "buildings_4", "answer_1": "Big Ben", "answer_2": "Colosseum", "answer_3": "Eiffel Tower", "quizimage": "images/buildings.png"},
+		{"name": "buildings_5", "answer_1": "Big Ben", "answer_2": "Colosseum", "answer_3": "Eiffel Tower", "quizimage": "images/buildings.png"}
+	]
+}

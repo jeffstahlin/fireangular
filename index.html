@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <meta charset="utf8">
+    <title>Quizztastic Angular Steroids App</title>
+
+    <link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.css" />
+    <link rel="stylesheet" href="stylesheets/application.css" />
+    <link rel="stylesheet" href="fireangular.css" />
+
+    <script src="javascripts/onerror.js"></script>
+    <script src="javascripts/console.log.js"></script>
+
+    <!-- cordova.js is served from localhost to ensure the correct version -->
+    <script src="http://localhost/appgyver/cordova.js"></script>
+    <script src="components/steroids-js/steroids.js"></script>
+
+    <script src="javascripts/application.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js"></script>
+  </head>
+  <body ng-controller="MyController">
+    <div class="topcoat-button center full" ontouchend="showQuizzes()">Quizzes</div>
+  </body>
+  
+  <script>
+    var app = angular.module("myapp", ["firebase"]);
+    function MyController($scope, angularFire) {
+      var ref = new Firebase("https://quizztastic.firebaseio.com/quizzes/");
+      $scope.quizzes = [];
+      angularFire(ref, $scope, "quizzes");
+      $scope.addQuiz = function(e) {
+        if (e.keyCode != 13) return;
+        $scope.quizzes.push({image: $scope.image, title: $scope.title});
+        $scope.quiz = "";
+      }
+    }
+  </script>
+</html>

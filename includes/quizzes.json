@@ -1,0 +1,7 @@
+{
+	"quizzes": [
+		{"title": "Cars", "image": "images/cars.png"},
+		{"title": "Buildings", "image": "images/buildings.png"},
+		{"title": "Super Villains", "image": "images/super_villains.png"}
+	]
+}
